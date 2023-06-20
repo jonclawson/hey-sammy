@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 
     <div class="container">
       <h1>{{name}}</h1>
-      <p><button (click)="listen()" class="btn btn-primary btn-sm">
+      <p (click)="listen()"><button (click)="listen()" class="btn btn-primary btn-sm">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -31,7 +31,7 @@ import { FormsModule } from '@angular/forms';
       </svg>
     </button> {{description}}</p>
       <div *ngIf="voice.speech" class="alert alert-primary" role="alert">{{voice.speech}}</div>
-      <textarea class="form-control" [(ngModel)]="message"></textarea>
+      <textarea (click)="listen()" class="form-control" [(ngModel)]="message"></textarea>
       <pre *ngIf="voice.messages.length" class="alert alert-primary" role="alert">{{ voice.messages | json}}</pre>
     </div>
   `,
