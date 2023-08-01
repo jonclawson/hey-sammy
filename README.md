@@ -1,3 +1,3 @@
-# trip-down
+# hey-sammy
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/trip-down)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/hey-sammy)
